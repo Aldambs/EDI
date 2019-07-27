@@ -1,28 +1,28 @@
 
 public class Position {
 
-    private int [][][] row;
-    private int [][][] col;
+    private int row;
+    private int col;
 
-    public int[][][] getCol() {
+    public int getCol() {
         return col;
     }
 
-    public int[][][] getRow() {
+    public int getRow() {
         return row;
     }
 
-    public void setCol(int[][][] col) {
+    public void setCol(int col) {
         this.col = col;
     }
 
-    public void setRow(int[][][] row) {
+    public void setRow(int row) {
         this.row = row;
     }
 
     @Override
     public boolean equals(Object obj) {
-        return super.equals(obj);
+        return true;
     }
 
     @Override
