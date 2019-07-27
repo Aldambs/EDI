@@ -1,8 +1,8 @@
 
 public class Position {
 
-    private int [][][] row  = new int[][][];
-    private int [][][] col = new int[][][];
+    private int [][][] row;
+    private int [][][] col;
 
     public int[][][] getCol() {
         return col;
