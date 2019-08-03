@@ -6,7 +6,6 @@ public abstract class AbsVacuumCleanerRobot extends AbsBasicRobot implements IVa
 	
 	private boolean switchedOn;
 	
-	
 	public AbsVacuumCleanerRobot(Environment environment) {
 		super(environment);
 	}
@@ -21,10 +20,10 @@ public abstract class AbsVacuumCleanerRobot extends AbsBasicRobot implements IVa
 	
 	public boolean isDirty() {
 		if(currentPosition.equals(' ')) {
-			return false;
+		     return false;
 		}
 		else {
-			return true;
+		     return true;
 		} 
 		
 	}
