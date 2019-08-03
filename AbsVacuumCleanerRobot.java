@@ -12,15 +12,15 @@ public abstract class AbsVacuumCleanerRobot extends AbsBasicRobot implements IVa
 	}
 	
 	public void turnOn() {
-		switchedOn=true;
+		switchedOn = true;
 	}
 	
 	public void turnOff() {
-		switchedOn=false;
+		switchedOn = false;
 	}
 	
 	public boolean isDirty() {
-		if(currentPosition.equals('')) {
+		if(currentPosition.equals(' ')) {
 			return false;
 		}
 		else {
