@@ -44,7 +44,7 @@ public class Position {
     
     @Override
     public int hashCode() {
-        final prime = 30;
+        final prime = 31;
         int solucao = 1;
         solucao = prime * solucao + this.row;
         solucao = prime * solucao + this.col;
