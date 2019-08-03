@@ -30,7 +30,7 @@ public abstract class AbsVacuumCleanerRobot extends AbsBasicRobot implements IVa
 	}
 	
 	public void clear() {
-		
+		environment.setPosition[correntPositin, ' '];
 				
 	}
 	
