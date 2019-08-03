@@ -35,10 +35,10 @@ public class Position {
 	public boolean equals(Object obj) {
 		if (this == obj)
 			return true;
-		if ((obj == null) ||getClass() != obj.getClass() )
+		if ((obj == null) || getClass() != obj.getClass() )
 			return false;
 		Position other = (Position) obj;
-		if ((col != other.col)&&(row != other.row))
+		if ((col != other.col) && (row != other.row))
 			return false;
 		return true;
 	}
