@@ -8,13 +8,13 @@ public class Environment {
 	private int length;
 	
 	public Environment(char[][] environment) {
-		this.environment=new char[3][3];
+		this.environment = new char[3][3];
 	}
 	
 	public Environment(int width, int length) {
-		this.environment=new char[width][length];
-		this.width=width;
-		this.length=length;
+		this.environment = new char[width][length];
+		this.width = width;
+		this.length = length;
 		
 	}
 	public char getValue(Position position){
