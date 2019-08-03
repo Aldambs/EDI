@@ -7,21 +7,21 @@ public class LeftRigthVacuumCleanerRobot extends AbsVacuumCleanerRobot{
 	}
 	
 	public Position move() {
-		int l=currentPosition.getRow();
-		int c=currentPosition.getCol();
+		int linha = currentPosition.getRow();
+		int coluna = currentPosition.getCol();
 		
 		if(l>super.environment.length) {
 			try{
-				c++;
-				l=0;
+				coluna++;
+				linha = 0;
 			}catch(java.lang.ArrayIndexOutOfBoundsException e) {
 				System.out.println("hehe");
 			}
-			currentPosition.setRow(l);
-			currentPosition.setRow(c);
+			currentPosition.setRow(linha);
+			currentPosition.setRow(coluna);
 		}else {
-			currentPosition.setRow(l);
-			currentPosition.setRow(c);
+			currentPosition.setRow(linha);
+			currentPosition.setRow(coluna);
 		}
 		
 		return currentPosition;
@@ -38,13 +38,13 @@ public class LeftRigthVacuumCleanerRobot extends AbsVacuumCleanerRobot{
 
 	@Override
 	public void isDrity() {
-		// TODO Auto-generated method stub
+		
 		
 	}
 
 	@Override
 	public void clean() {
-		// TODO Auto-generated method stub
+		
 		
 	}
 	
