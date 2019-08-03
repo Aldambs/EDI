@@ -32,31 +32,23 @@ public class Position {
     
     @Override
     public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj == null) {
-            return false;
-        }
-        if (getClass() != obj.getClass()) {
-            return false;
-        }
-        final Position other = (Position) obj;
-        if (this.row != other.row) {
-            return false;
-        }
-        if (this.col != other.col) {
-            return false;
-        }
-        return true;
+       if (this == obj)
+			return true;
+		if ((obj == null) ||getClass() != obj.getClass() )
+			return false;
+		Position other = (Position) obj;
+		if ((col != other.col)&&(row != other.row))
+			return false;
+		return true;
     }
     
     @Override
     public int hashCode() {
-        int hash = 7;
-        hash = 79 * hash + this.row;
-        hash = 79 * hash + this.col;
-        return hash;
+        final prime = 30;
+        int solucao = 1;
+        solucao = prime * solucao + this.row;
+        solucao = prime * solucao + this.col;
+        return solucao;
     }
 
     @Override
