@@ -22,7 +22,7 @@ public abstract class AbsBasicRobot implements IRobot {
 	public void setStartPosition(Position position) {
 		
 		try{
-			initialPosition=position;
+			initialPosition = position;
 		}catch(java.lang.ArrayIndexOutOfBoundsException e) {
 			System.out.println("Posição inicial inválida.");
 		}
@@ -33,7 +33,7 @@ public abstract class AbsBasicRobot implements IRobot {
 
 	public void setFinalPosition(Position position) {
 		try{
-			finalPosition=position;
+			finalPosition = position;
 		}catch(NullPointerException e) {
 			System.out.println("Posição final inválida.");
 		}
