@@ -1,32 +1,38 @@
-package provaPOO2_2018;
+package RevisaoPOO;
 
-/**
- *
- * @author Alda Matos
- */
-public abstract class AbsVacuumCleanerRobot implements IVacuumCleaner{
-    private boolean swtchedOn;
+import java.util.Currency;
 
-    public AbsVacuumCleanerRobot(Environment environment) {
-        this.swtchedOn = swtchedOn;
-    }
-    
-    @Override
-    public void trunOn(){
-        
-    }
-    @Override
-    public void trunOff(){
-        
-    }
-    @Override
-    public boolean isDirty(){
-        return false;
-        
-    }
-    
-    @Override
-    public void clean(){
-        
-    }
+public abstract class AbsVacuumCleanerRobot extends AbsBasicRobot implements IVacuumCleaner{
+	
+	private boolean switchedOn;
+	
+	
+	public AbsVacuumCleanerRobot(Environment environment) {
+		super(environment);
+	}
+	
+	public void turnOn() {
+		switchedOn=true;
+	}
+	
+	public void turnOff() {
+		switchedOn=false;
+	}
+	
+	public boolean isDirty() {
+		if(currentPosition.equals('')) {
+			return false;
+		}
+		else {
+			return true;
+		} 
+		
+	}
+	
+	public void clear() {
+		
+				
+	}
+	
+	
 }

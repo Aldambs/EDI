@@ -1,21 +1,55 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package provaPOO2_2018;
+package RevisaoPOO;
 
-/**
- *
- * @author Alda Matos
- */
-public class LeftRigthVacuumCleanerRobot {
-    
-    public LeftRigthVacuumCleanerRobot(Environment environment){
+public class LeftRigthVacuumCleanerRobot extends AbsVacuumCleanerRobot{
+	
+	public LeftRigthVacuumCleanerRobot(Environment environment) {
+		super(environment);
+	}
+	
+	public Position move() {
+		int l=currentPosition.getRow();
+		int c=currentPosition.getCol();
+		
+		if(l>super.environment.length) {
+			try{
+				c++;
+				l=0;
+			}catch(java.lang.ArrayIndexOutOfBoundsException e) {
+				System.out.println("hehe");
+			}
+			currentPosition.setRow(l);
+			currentPosition.setRow(c);
+		}else {
+			currentPosition.setRow(l);
+			currentPosition.setRow(c);
+		}
+		
+		return currentPosition;
+		
+	}
 
-    }
-    
-    public Position move(){
-        return null;
-    }
+	public void turnOn() {
+		
+	}
+
+	public boolean isSwitchedOn() {
+		return false;
+	}
+
+	@Override
+	public void isDrity() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void clean() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+	
+	
+	
 }

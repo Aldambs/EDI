@@ -1,38 +1,39 @@
-package provaPOO2_2018;
+package RevisaoPOO;
 
-/**
- *
- * @author Alda Matos
- */
 public class Position {
+	
+	private int row;
+	private int col;
+	
+	public Position(int row, int col) {
+		this.row=row;
+		this.col=col;
+	}
+	
+	public int getRow() {
+		return row;
+	}public void setRow(int row) {
+		this.row = row;
+	}
+	public int getCol() {
+		return col;
+	}public void setCol(int col) {
+		this.col = col;
+	}
+	
+	
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + col;
+		result = prime * result + row;
+		return result;
+	}
 
-    private int row;
-    private int col;
-
-    public Position(int row, int col) {
-        this.row = row;
-        this.col = col;
-    }
-    
-    public int getCol() {
-        return col;
-    }
-
-    public int getRow() {
-        return row;
-    }
-
-    public void setCol(int col) {
-        this.col = col;
-    }
-
-    public void setRow(int row) {
-        this.row = row;
-    }
-    
-    @Override
-    public boolean equals(Object obj) {
-       if (this == obj)
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
 			return true;
 		if ((obj == null) ||getClass() != obj.getClass() )
 			return false;
@@ -40,21 +41,11 @@ public class Position {
 		if ((col != other.col)&&(row != other.row))
 			return false;
 		return true;
-    }
-    
-    @Override
-    public int hashCode() {
-        final prime = 31;
-        int solucao = 1;
-        solucao = prime * solucao + this.row;
-        solucao = prime * solucao + this.col;
-        return solucao;
-    }
-
-    @Override
-    public String toString() {
-        return "[" + row + "," + col + "]";
-    }
-
-    
+	}
+	
+	
+	@Override
+	public String toString() {
+		return "["+ row +", "+ col +"]" ;
+	}
 }
