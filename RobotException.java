@@ -11,19 +11,9 @@ package provaPOO2_2018;
  */
 public class RobotException extends Exception {
 
-    /**
-     * Creates a new instance of <code>RobotException</code> without detail
-     * message.
-     */
     public RobotException() {
     }
-
-    /**
-     * Constructs an instance of <code>RobotException</code> with the specified
-     * detail message.
-     *
-     * @param msg the detail message.
-     */
+    
     public RobotException(String msg) {
         super(msg);
     }
