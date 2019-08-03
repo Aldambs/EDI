@@ -11,10 +11,10 @@ public abstract class AbsBasicRobot implements IRobot {
 	
 //-------------------------------------------------------------------//
 	public AbsBasicRobot(Environment environment) {
-		this.environment=new Environment[3][3];
-		initialPosition=new Position(0, 0);
-		finalPosition=new Position(2, 2);
-		currentPosition=new Position(0, 0);
+		this.environment = new Environment[3][3];
+		initialPosition = new Position(0, 0);
+		finalPosition = new Position(2, 2);
+		currentPosition = new Position(0, 0);
 		
 	}
 //-------------------------------------------------------------------//
@@ -25,7 +25,7 @@ public abstract class AbsBasicRobot implements IRobot {
 		try{
 			initialPosition=position;
 		}catch(java.lang.ArrayIndexOutOfBoundsException e) {
-			System.out.println("PosiÁ„o inicial inv·lida.");
+			System.out.println("Posi√ß√£o inicial inv√°lida.");
 		}
 		
 	}
@@ -36,7 +36,7 @@ public abstract class AbsBasicRobot implements IRobot {
 		try{
 			finalPosition=position;
 		}catch(NullPointerException e) {
-			System.out.println("PosiÁ„o final inv·lida.");
+			System.out.println("Posi√ß√£o final inv√°lida.");
 		}
 	}
 	
@@ -61,7 +61,7 @@ public abstract class AbsBasicRobot implements IRobot {
 	
 	
 	public void printPosition() {
-		System.out.println( "\nO robÙ est· na posiÁ„o "+currentPosition+"." );
+		System.out.println( "\nO rob√¥ est√° na posi√ß√£o "+currentPosition+"." );
 		
 	}
 
