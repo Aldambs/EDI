@@ -19,7 +19,6 @@ public abstract class AbsBasicRobot implements IRobot {
 	}
 //-------------------------------------------------------------------//
 	
-	
 	public void setStartPosition(Position position) {
 		
 		try{
@@ -39,7 +38,6 @@ public abstract class AbsBasicRobot implements IRobot {
 			System.out.println("Posição final inválida.");
 		}
 	}
-	
 	
 	public Environment[][] getEnvironment() { 
 		return environment;
@@ -65,7 +63,6 @@ public abstract class AbsBasicRobot implements IRobot {
 		
 	}
 
-
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -76,7 +73,6 @@ public abstract class AbsBasicRobot implements IRobot {
 		result = prime * result + ((initialPosition == null) ? 0 : initialPosition.hashCode());
 		return result;
 	}
-
 
 	@Override
 	public boolean equals(Object obj) {
